@@ -10,7 +10,7 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"astro": "^2.5.5"
+		"astro": "^4.5.15"
 	},
 	"devDependencies": {
 		"@types/markdown-it": "^12.2.3",
