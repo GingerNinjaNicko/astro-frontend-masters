@@ -12,7 +12,7 @@ export function addItemToCArt(item: ShopItem) {
     })
 }
 
-export function removeFromCart(itemId: number) {
+export function removeItemFromCart(itemId: number) {
     //@ts-ignore
     $cart.setKey(itemId, undefined);
 }
