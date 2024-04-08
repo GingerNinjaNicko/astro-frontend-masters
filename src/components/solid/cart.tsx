@@ -62,8 +62,11 @@ export const Cart = () => {
                     </p>
                     <p class={styles.shipping}>
                         <span class={styles.label}>Shipping:</span>{' '}
-                        <del>£10.00</del>
-                        <ins>FREE</ins>
+                        {
+                            $subtotal() < 30 
+                                ? <ins>£10.00</ins>
+                                : <><del>£10.00</del><ins>FREE</ins></>
+                        }
                     </p>
                     <p class={styles.total}>
                         <span class={styles.label}>Total:</span>{' '}
