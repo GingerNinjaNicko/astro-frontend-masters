@@ -49,7 +49,7 @@ export const Cart = () => {
                                         &times;
                                     </button>
                                 </span>
-                                <span class={styles.price}>{entry.item.price}</span>
+                                <span class={styles.price}>{formatCurrency(entry.item.price)}</span>
                             </li>
                         )
                     })}
